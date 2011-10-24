@@ -100,31 +100,33 @@
 	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="uk" lang="uk">
 	<head>
-		
+		<title><?php echo $title; if(($titleLocal != "")&&($title != "")) echo " - "; echo $titleLocal; ?></title>
 		<meta http-equiv="content-language" content="ua"/>
 		<meta name="keywords" content="<?php echo $keywordsOutput; ?>" />
 		<meta name="Description" content="<?php echo $descriptionOutput; ?>" />
-		<title><?php echo $title; if(($titleLocal != "")&&($title != "")) echo " - "; echo $titleLocal; ?></title>
 		<meta content="all" name="audience"/>
-		<link rel="stylesheet" href="main.css" type="text/css"/>
-		<link rel="stylesheet" href="fonts.css" type="text/css"/>
-		<link rel="stylesheet" href="buttons.css" type="text/css"/>
-        <link rel="stylesheet" href="engine/buttons_module/buttons_adm.css" type="text/css"/>
-		<link type="text/css" rel="stylesheet" href="engine/slimbox-2.04/slimbox2.css" media="screen"/>
-		
-		<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<link type="text/css" rel="stylesheet" href="main.css"/>
+		<link type="text/css" rel="stylesheet" href="fonts.css"/>
+		<link type="text/css" rel="stylesheet" href="buttons.css"/>
+		<link type="text/css" rel="stylesheet" href="engine/buttons_module/buttons_adm.css"/>
+		<link type="text/css" rel="stylesheet" href="engine/colorbox/colorbox.css" media="screen"/>
+		<link type="image/x-icon" rel="shortcut icon" href="/favicon.ico">
 		<script type="text/javascript" src="engine/jquery-1.5.min.js" ></script>
 		<script type="text/javascript" src="engine/getElementsByClassName-1.0.1.js"></script>
 		<script type="text/javascript" src="engine/main.js"></script>
-		<script type="text/javascript" src="engine/slimbox-2.04/slimbox2.js"></script>
-        <script type="text/javascript" src="engine/buttons_module/ajaxFuncs.js" ></script>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<script type="text/javascript" src="engine/colorbox/jquery.colorbox-min.js"></script>
+        	<script type="text/javascript" src="engine/buttons_module/ajaxFuncs.js" ></script>
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				$("a").colorbox({rel:'lightbox', current:''});
+			});
+		</script>
 		<?php
 			if(!$loggedIn)
 				echo $seo;
-		?>	
-        
+		?>
 	</head>
 	<body onload="afterAll();">
 	<div id="container">
