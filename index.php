@@ -120,7 +120,7 @@
 		<script type="text/javascript">
 			$(document).ready(function()
 			{
-				$("a").colorbox({rel:'lightbox', current:''});
+				$("a[rel^='lightbox']").colorbox({current:''});
 			});
 		</script>
 		<?php
