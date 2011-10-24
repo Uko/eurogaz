@@ -1,0 +1,80 @@
+  .adm_button_box
+  {
+	  float:right;
+	  position:absolute;
+	  margin-left:-100px;
+	  margin-top:-45px;
+  }
+  .adm_button_box a
+  {
+	  display:block;
+  }
+	  .func_updown_holder
+	  {
+		  float:left;
+		  width:23px;
+	  }
+		  .up_func
+		  {
+			  height:18px;
+			  width:23px;
+			  background-image:url(../../resources/adm_buttons.png);
+		  }
+			  .up_func a
+			  {
+				  height:18px;
+				  width:23px;
+			  }
+		  .down_func
+		  {
+			  height:18px;
+			  width:23px;
+			  background-image:url(../../resources/adm_buttons.png);
+			  background-position:0px -18px;
+		  }
+			  .down_func a
+			  {
+				  height:18px;
+				  width:23px;
+			  }
+	  .remove_func
+	  {
+		  height:36px;
+		  width:36px;
+		  float:left;
+		  background-image:url(../../resources/adm_buttons.png);
+		  background-position:-23px 0px;
+	  }
+		  .remove_func a
+		  {
+			  height:36px;
+			  width:36px;
+		  }
+	#buttons_savebtn
+	{
+		margin:0 auto;
+		background-image:url(../../resources/button-sprite.png);
+		margin-top:20px;
+		color:White;
+		line-height:40px;
+		width:228px;
+		height:40px;
+	}
+	#buttons_savebtn:hover
+	{
+		background-position:-228px 0px;
+	}
+	#buttons_savebtn:active
+	{
+		position:relative;
+		left:2px;
+		top:2px;
+	}
+	#editable_header
+	{
+		width:100%;
+		margin: 0px 0px 30px 0px;
+		font-family: myriad,Sans-Serif,Verdana,Tahoma,Arial;
+		font-size: 1.5em;
+		font-weight: 700;
+	}

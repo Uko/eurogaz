@@ -1,0 +1,293 @@
+------------------------------------------------------------------------
+Date: 2011.03.14 17:36:00
+sahcFromFile: 501ce38a90fb5f2d9b44526419be847e774
+sahcFromHTTP: 501ce38a90fb5f2d9b44526419be847e774
+todo: savePageData
+--openMySQLConnection
+Hostname: sql101.byethost8.com Username: b8_5210590 Password: stz87djxvwr0
+contacts.2011.03.14.17.36.00.saved.sqlinphp: File successfully created.
+contacts.2011.03.14.17.36.00.saved.sqlinphp: SQL string written.
+contacts.2011.03.14.17.36.00.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #10
+------------------------------------------------------------------------
+Date: 2011.03.14 17:55:58
+sahcFromFile: 2b4115580f4b4d5849435076bf9c5c0e788
+sahcFromHTTP: 2b4115580f4b4d5849435076bf9c5c0e788
+todo: initDB
+--openMySQLConnection
+Hostname: sql101.byethost8.com Username: b8_5210590 Password: stz87djxvwr0
+--mysql_close
+mysqlConnectionLinkID: Resource id #10
+------------------------------------------------------------------------
+Date: 2011.03.14 21:30:23
+sahcFromFile: 0a36c3557826cd34c0b885677ca88e48937
+sahcFromHTTP: 0a36c3557826cd34c0b885677ca88e48937
+todo: savePageData
+--openMySQLConnection
+Hostname: sql101.byethost8.com Username: b8_5210590 Password: stz87djxvwr0
+contacts.2011.03.14.21.30.23.saved.sqlinphp: File successfully created.
+contacts.2011.03.14.21.30.23.saved.sqlinphp: SQL string written.
+contacts.2011.03.14.21.30.23.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #10
+------------------------------------------------------------------------
+Date: 2011.03.15 13:08:39
+sahcFromFile: 553db3569ada60b81765bef716959244505
+sahcFromHTTP: 81067cd253dab5f057bede362718f28d504
+------------------------------------------------------------------------
+Date: 2011.03.15 13:14:39
+sahcFromFile: 4be15346d95547c228842849adb04026506
+sahcFromHTTP: b2b571906c9ba830bc925d0b13e1dca5506
+------------------------------------------------------------------------
+Date: 2011.03.15 14:47:12
+sahcFromFile: e3462ef229ea5b4a04ab512bfe7d1432574
+sahcFromHTTP: e3462ef229ea5b4a04ab512bfe7d1432574
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+results.2011.03.15.14.47.12.saved.sqlinphp: File successfully created.
+results.2011.03.15.14.47.12.saved.sqlinphp: SQL string written.
+results.2011.03.15.14.47.12.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.03.15 14:52:55
+sahcFromFile: cf2f41eb30556fd288734279131d7d77574
+sahcFromHTTP: cf2f41eb30556fd288734279131d7d77574
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+contacts.2011.03.15.14.52.55.saved.sqlinphp: File successfully created.
+contacts.2011.03.15.14.52.55.saved.sqlinphp: SQL string written.
+contacts.2011.03.15.14.52.55.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.03.15 14:53:09
+sahcFromFile: cf2f41eb30556fd288734279131d7d77574
+sahcFromHTTP: cf2f41eb30556fd288734279131d7d77574
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+contacts.2011.03.15.14.53.09.saved.sqlinphp: File successfully created.
+contacts.2011.03.15.14.53.09.saved.sqlinphp: SQL string written.
+contacts.2011.03.15.14.53.09.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.03.15 14:55:20
+sahcFromFile: cf2f41eb30556fd288734279131d7d77574
+sahcFromHTTP: cf2f41eb30556fd288734279131d7d77574
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+contacts.2011.03.15.14.55.20.saved.sqlinphp: File successfully created.
+contacts.2011.03.15.14.55.20.saved.sqlinphp: SQL string written.
+contacts.2011.03.15.14.55.20.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.03.15 14:55:42
+sahcFromFile: cf2f41eb30556fd288734279131d7d77574
+sahcFromHTTP: cf2f41eb30556fd288734279131d7d77574
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+contacts.2011.03.15.14.55.42.saved.sqlinphp: File successfully created.
+contacts.2011.03.15.14.55.42.saved.sqlinphp: SQL string written.
+contacts.2011.03.15.14.55.42.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.03.15 15:17:11
+sahcFromFile: cd47ba5331379306395891de346786ff595
+sahcFromHTTP: cd47ba5331379306395891de346786ff595
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+results.2011.03.15.15.17.11.saved.sqlinphp: File successfully created.
+results.2011.03.15.15.17.11.saved.sqlinphp: SQL string written.
+results.2011.03.15.15.17.11.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.03.15 15:18:04
+sahcFromFile: cd47ba5331379306395891de346786ff595
+sahcFromHTTP: cd47ba5331379306395891de346786ff595
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+results.2011.03.15.15.18.04.saved.sqlinphp: File successfully created.
+results.2011.03.15.15.18.04.saved.sqlinphp: SQL string written.
+results.2011.03.15.15.18.04.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.03.18 18:47:33
+sahcFromFile: 14076fc86d6b920c3d8d7c6bb47ebfe6741
+sahcFromHTTP: 14076fc86d6b920c3d8d7c6bb47ebfe6741
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+main.2011.03.18.18.47.33.saved.sqlinphp: File successfully created.
+main.2011.03.18.18.47.33.saved.sqlinphp: SQL string written.
+main.2011.03.18.18.47.33.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.07.10 20:29:26
+sahcFromFile: 0197d67740bcc2b2bdbd29c81aaafefc770
+sahcFromHTTP: 0197d67740bcc2b2bdbd29c81aaafefc770
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+main.2011.07.10.20.29.26.saved.sqlinphp: File successfully created.
+main.2011.07.10.20.29.26.saved.sqlinphp: SQL string written.
+main.2011.07.10.20.29.26.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.07.10 20:33:48
+sahcFromFile: 1cd89a4f9ced6a0bd6279709b0195cfc772
+sahcFromHTTP: 1cd89a4f9ced6a0bd6279709b0195cfc772
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+results.2011.07.10.20.33.48.saved.sqlinphp: File successfully created.
+results.2011.07.10.20.33.48.saved.sqlinphp: SQL string written.
+results.2011.07.10.20.33.48.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.07.10 21:16:30
+sahcFromFile: ec3a3f31d224b91c742bdca7f3cbfec7802
+sahcFromHTTP: ec3a3f31d224b91c742bdca7f3cbfec7802
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+main.2011.07.10.21.16.30.saved.sqlinphp: File successfully created.
+main.2011.07.10.21.16.30.saved.sqlinphp: SQL string written.
+main.2011.07.10.21.16.30.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.10.19 10:44:23
+sahcFromFile: a5a88cfe3949ec87546015120198bcce361
+sahcFromHTTP: a5a88cfe3949ec87546015120198bcce361
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+contacts.2011.10.19.10.44.23.saved.sqlinphp: File successfully created.
+contacts.2011.10.19.10.44.23.saved.sqlinphp: SQL string written.
+contacts.2011.10.19.10.44.23.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.10.19 13:59:28
+sahcFromFile: 401f2af27750dce88e12ca75a2d3ba2e479
+sahcFromHTTP: 401f2af27750dce88e12ca75a2d3ba2e479
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+main.2011.10.19.13.59.28.saved.sqlinphp: File successfully created.
+main.2011.10.19.13.59.28.saved.sqlinphp: SQL string written.
+main.2011.10.19.13.59.28.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.10.19 14:29:43
+sahcFromFile: d6b5eac757c0a8a43e445691b634915e501
+sahcFromHTTP: d6b5eac757c0a8a43e445691b634915e501
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+results.2011.10.19.14.29.43.saved.sqlinphp: File successfully created.
+results.2011.10.19.14.29.43.saved.sqlinphp: SQL string written.
+results.2011.10.19.14.29.43.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.10.20 12:18:02
+sahcFromFile: fcde4ca115ccc565594e717403be8686404
+sahcFromHTTP: fcde4ca115ccc565594e717403be8686404
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+results.2011.10.20.12.18.02.saved.sqlinphp: File successfully created.
+results.2011.10.20.12.18.02.saved.sqlinphp: SQL string written.
+results.2011.10.20.12.18.02.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.10.20 12:19:52
+sahcFromFile: bf5ec4acfb99f794bbc3eb529b0083b1429
+sahcFromHTTP: bf5ec4acfb99f794bbc3eb529b0083b1429
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+main.2011.10.20.12.19.52.saved.sqlinphp: File successfully created.
+main.2011.10.20.12.19.52.saved.sqlinphp: SQL string written.
+main.2011.10.20.12.19.52.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.10.20 13:27:55
+sahcFromFile: 0c5d87745adf24feae8026306a81dbb7430
+sahcFromHTTP: 0c5d87745adf24feae8026306a81dbb7430
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+results.2011.10.20.13.27.55.saved.sqlinphp: File successfully created.
+results.2011.10.20.13.27.55.saved.sqlinphp: SQL string written.
+results.2011.10.20.13.27.55.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.10.21 16:24:29
+sahcFromFile: d30e9952d9530f7877e39d18a84d963b581
+sahcFromHTTP: d30e9952d9530f7877e39d18a84d963b581
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+main.2011.10.21.16.24.29.saved.sqlinphp: File successfully created.
+main.2011.10.21.16.24.29.saved.sqlinphp: SQL string written.
+main.2011.10.21.16.24.29.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.10.21 17:11:39
+sahcFromFile: d30e9952d9530f7877e39d18a84d963b581
+sahcFromHTTP: d30e9952d9530f7877e39d18a84d963b581
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+main.2011.10.21.17.11.39.saved.sqlinphp: File successfully created.
+main.2011.10.21.17.11.39.saved.sqlinphp: SQL string written.
+main.2011.10.21.17.11.39.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.10.21 17:39:54
+sahcFromFile: d30e9952d9530f7877e39d18a84d963b581
+sahcFromHTTP: d30e9952d9530f7877e39d18a84d963b581
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+main.2011.10.21.17.39.54.saved.sqlinphp: File successfully created.
+main.2011.10.21.17.39.54.saved.sqlinphp: SQL string written.
+main.2011.10.21.17.39.54.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9
+------------------------------------------------------------------------
+Date: 2011.10.21 17:55:51
+sahcFromFile: b998e5d47090304fa6c9df64038bd414654
+sahcFromHTTP: b998e5d47090304fa6c9df64038bd414654
+todo: savePageData
+--openMySQLConnection
+Hostname: localhost Username: eurogaz Password: W5yS.6gx
+main.2011.10.21.17.55.51.saved.sqlinphp: File successfully created.
+main.2011.10.21.17.55.51.saved.sqlinphp: SQL string written.
+main.2011.10.21.17.55.51.saved.sqlinphp: Data successfully saved.
+--mysql_close
+mysqlConnectionLinkID: Resource id #9

@@ -1,0 +1,1 @@
+UPDATE eurogas_pages SET title = 'Виконані об\\\'єкти', content = '<p style=\\\"text-align: center;\\\">Скоро буде&hellip;</p>', keywords = '', description = 'n' WHERE nameID = 'results'

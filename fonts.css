@@ -1,0 +1,93 @@
+.ac_title 
+{
+  font-family: Arial;
+  font-size: 14px;
+  color: #ED2229;
+  font-weight: bold;
+  padding-left: 8px;
+  
+}
+
+.ac_text 
+{
+  font-family: Arial;
+  font-size: 11px;
+  color: #831C00;
+  text-align: justify;
+  font-weight: 700;
+  padding-left: 8px;
+}
+.ac_next
+ {
+  font-family: Arial;
+  font-size: 11px;
+  color: #831C00;
+  font-weight: bold;
+  text-decoration: none;
+}
+.about_menu
+ {
+  font-family: Arial,Tahoma;
+  font-size:15px;
+  font-weight: bold;
+  color: #730C00;
+  padding-left: 8px;
+  line-height: 22px;
+  text-decoration: none;
+}
+.about_menu a:hover
+{
+	text-decoration: underline;
+}
+.about_menu a:active
+{
+	color: black !important;
+}
+.about_stext 
+{
+	color:#730C00;
+	font-family:Tahoma;
+	font-size:11px;
+	text-align:justify;
+	text-decoration:none;
+}
+.about_stext a:hover 
+{
+	text-decoration:underline;
+}
+.sshop 
+{
+  font-family: Tahoma,Arial;
+  font-size: 11px;
+  color: #730C00;
+  font-weight: bold;
+  /*padding-bottom: 3px;
+  padding-right: 85px;*/
+  text-align:right;
+  /*height:50px;
+  width:100%;
+  position:relative;
+  right:85px;
+  top:40px;*/
+}
+.stitle 
+{
+  font-family: Tahoma,Arial;
+  font-size: 10px;
+  color: #730C00;
+  font-weight: bold;
+  text-decoration: none;
+}
+.news_date 
+{ 
+color: #730c00;
+font-family: "Tahoma";
+font-size: 11px;
+font-weight: 700;
+}
+.news_text
+ { 
+color: #730c00;
+font-family: "Tahoma";
+font-size: 11px;
+}

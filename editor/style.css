@@ -1,0 +1,44 @@
+form
+{
+	text-align: center;
+}
+
+h1
+{
+	color: #2891DB;
+	text-align: center;
+	text-decoration: blink underline;
+}
+
+div
+{
+	width: 200px;
+	margin: 50px auto;
+	background: #C8EDFD;
+	border-color: #C2A121;
+	border-width: 5px;
+	border-style: solid;
+	border-radius: 100px / 20px;
+	-moz-border-radius: 100px / 20px;
+	padding-bottom: 5px;
+}
+
+input
+{
+	width: 146px;
+	margin: auto;
+	clear: both;
+}
+
+label
+{
+	color: #2891DB;
+	float: left;
+	clear: both;
+}
+
+p
+{
+	width: 150px;
+	margin: 10px auto;
+}

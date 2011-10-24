@@ -1,0 +1,41 @@
+<?php
+	include_once("engine/variables.php");
+	include_once("engine/functions.php");
+	include_once("engine/functions.MySQL.php");
+	include_once("engine/security.isLoggedIn.php");
+	include_once("engine/seo.php");
+	if(!$mysqlConnectionLinkID)
+		$mysqlConnectionLinkID = openMySQLConnection($mysqlHostname, $mysqlUsername, $mysqlPassword);
+	//$availableButtons = getDBColumnIntoList($mysqlConnectionLinkID, $mysqlDBName, $mysqlDBTableToStoreButtons, $DBTableColumnWithPageNames);
+	//print_r($availablePages);
+	//get page to load
+	$ButtonData = getDataFromDB($mysqlConnectionLinkID, $mysqlDBName, $mysqlDBTableToStoreButtons);
+	if(isset($_GET["service_name"]))
+	{
+		$ServiceID=$_GET["service_name"];
+	}
+	else
+	{
+		$ServiceID=$ButtonData[0]["name"];
+	}
+	$ServiceContent=$ButtonData[0]["button_content"];
+	echo "<div id=\"buttons_holder\"><ul>";
+	foreach ($ButtonData as &$curr_button) 
+	{
+		echo "<li><a style=\"background-color:".$curr_button["color"].";\" href=\"?page=services&service_name=".$curr_button["name"]."\">".$curr_button["caption"]."</a></li>";
+		if ($curr_button["name"]==$ServiceID)
+		{
+			$ServiceContent=$curr_button["button_content"];
+			$ServiceCaption=$curr_button["caption"];
+		}
+	}unset($curr_button);unset($ServiceID);
+	echo "</ul></div><div id=\"button_content\">";
+	echo "<h2>".$ServiceCaption."</h4>";
+	echo $ServiceContent;
+	echo "</div>";
+	if($mysqlConnectionLinkID)
+	{
+		mysql_close($mysqlConnectionLinkID);
+		unset($mysqlConnectionLinkID);
+	}
+?>
