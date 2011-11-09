@@ -111,8 +111,10 @@
 		<link type="text/css" rel="stylesheet" href="buttons.css"/>
 		<link type="text/css" rel="stylesheet" href="engine/buttons_module/buttons_adm.css"/>
 		<link type="text/css" rel="stylesheet" href="engine/colorbox/colorbox.css" media="screen"/>
+		<link type="text/css" rel="stylesheet" href="engine/jquery-ui-1.8.16/jquery-ui-1.8.16.base.css"/>
 		<link type="image/x-icon" rel="shortcut icon" href="/favicon.ico">
-		<script type="text/javascript" src="engine/jquery-1.5.min.js" ></script>
+		<script type="text/javascript" src="engine/jquery-1.7.min.js" ></script>
+		<script type="text/javascript" src="engine/jquery-ui-1.8.16/jquery-ui-1.8.16.min.js"></script>
 		<script type="text/javascript" src="engine/getElementsByClassName-1.0.1.js"></script>
 		<script type="text/javascript" src="engine/main.js"></script>
 		<script type="text/javascript" src="engine/colorbox/jquery.colorbox-min.js"></script>

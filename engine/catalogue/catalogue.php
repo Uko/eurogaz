@@ -9,7 +9,7 @@
 		$mysqlConnectionLinkID = openMySQLConnection($mysqlHostname, $mysqlUsername, $mysqlPassword);
 	
 	$allCategories = getDBColumnIntoList($mysqlConnectionLinkID, $mysqlDBName, $mysqlDBTableToStoreCatalogueItems, "id");
-	
+
 	$thisScriptName = thisRealScriptName($_SERVER["SCRIPT_NAME"], $_SERVER["SCRIPT_FILENAME"], __FILE__);
 	$thisScriptName = $thisScriptName[0].$thisScriptName[1].$thisScriptName[2];
 	$pathToThisScript = substr($thisScriptName, 0, strlen($thisScriptName) - strlen(basename($thisScriptName)));
@@ -60,7 +60,7 @@
 			$breadcrumbs = breadcrumbsView($breadcrumb["id"], $breadcrumb["name"], $urlBeginning) . $breadcrumbs;
 			$breadcrumb = $breadcrumb["parent"];
 		}
-	}	
+	}
 	$breadcrumbs = breadcrumbsView("", $LOCAL["first_breadcrumb"], $urlBeginning) . $breadcrumbs;
 	$breadcrumbIdStackAmount = count($breadcrumbIdStack);
 	/*

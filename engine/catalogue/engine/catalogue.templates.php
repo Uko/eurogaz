@@ -76,7 +76,7 @@ function groupView($items, $itemDescription)
 }
 function breadcrumbsView($show, $title, $urlBeginning = "")
 {//catalogue
-	return "<a href=\"{$urlBeginning}show=$show\">$title</a> >> ";
+	return "<a href=\"{$urlBeginning}show=$show\">$title</a> &gt;&gt; ";
 }
 function catalogueView($viewContainer, $pathToThisScript, $urlBeginning = "?")
 {//catalogue

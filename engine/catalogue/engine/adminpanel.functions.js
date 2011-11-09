@@ -43,11 +43,12 @@ function changeImageInputType(sahc, pathToUploader)
 		});
 	}
 }
-function addUploadedFileName(data)
+//function addUploadedFileName(data)
+function addUploadedFileName(imageFileName)
 {
-	if(data.substr(0, "File uploaded:".length) == "File uploaded:")
-	{
-		var imageFileName = data.substr("File uploaded:".length, data.length-"File uploaded:".length);
+//	if(data.substr(0, "File uploaded:".length) == "File uploaded:")
+//	{
+//		var imageFileName = data.substr("File uploaded:".length, data.length-"File uploaded:".length);
 		var prev = $("#images").val();
 		if($("#addItemForm_type").val() == "group")
 		{
@@ -58,7 +59,7 @@ function addUploadedFileName(data)
 		var next = prev + /*"images/" + */imageFileName;
 		$("#images").val(next);
 		
-	}
+//	}
 }
 function removePageClick(what, loc)
 {
@@ -87,15 +88,12 @@ var kr2en = {
 		return a.join("");
 	}
 }
-$(document).ready
-(
-	function()
-	{
-		kr2en.kr2en = {};
-		for(var i = 0, l = kr2en.kr_str.length; i < l; i++)
-			kr2en.kr2en[kr2en.kr_str.charAt(i)] = kr2en.en_str[i];
-	}
-)
+$(document).ready(function()
+{
+	kr2en.kr2en = {};
+	for(var i = 0, l = kr2en.kr_str.length; i < l; i++)
+		kr2en.kr2en[kr2en.kr_str.charAt(i)] = kr2en.en_str[i];
+})
 function catalogueStartUpTinyMCE()
 {
 	tinyMCE.init
