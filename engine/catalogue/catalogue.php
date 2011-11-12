@@ -236,7 +236,7 @@
 		//check whether there is some images for this item in the db
 		if($features["images"])
 		{
-			$images = explode("\\\\ ", $features["images"]);
+			$images = explode(" ", $features["images"]);
 			$imList = "";
 			$i = 0;
 			foreach($images as $im)

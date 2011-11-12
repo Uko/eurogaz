@@ -53,7 +53,7 @@ function pluploadView($pathToUploader, $maxFileSize = "2")
 				flash_swf_url : './js/plupload.flash.swf',
 				silverlight_xap_url : './js/plupload.silverlight.xap',
 				filters : [
-					{title : \"Image files\", extensions : \"jpg,gif,png\"}
+					{title : \"Image files\", extensions : \"jpg,jpeg,gif,png\"}
 //					,{title : \"Zip files\", extensions : \"zip\"}
 				],
 				buttons:{browse:true,start:false,stop:false},

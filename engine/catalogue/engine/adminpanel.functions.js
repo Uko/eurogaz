@@ -55,7 +55,7 @@ function addUploadedFileName(imageFileName)
 			$("#addItemForm_thumbnail").val("");
 		}
 		if(prev)
-			prev += "\\\\ ";
+			prev += " ";
 		var next = prev + /*"images/" + */imageFileName;
 		$("#images").val(next);
 		

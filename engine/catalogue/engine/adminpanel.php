@@ -56,7 +56,6 @@ if ($loggedIn)
 				$features = describeBDTable($mysqlConnectionLinkID, $mysqlDBName, $mysqlDBTableToStoreCatalogueFeatures);
 				$featuresHead = $features["Field"];
 			}
-			$features["images"] = str_replace("\\ ", "\\\\"."\\\\"." ", $features["images"]);
 			//дістати всі заголовки в таблиці features -- кінець
 			//далі їх обробка...
 			//поле вибору методу вводу картинок
@@ -233,7 +232,7 @@ if ($loggedIn)
 		// - генерація іконки з першого введеного зображення
 		if (!$_POST["thumbnail"] && $POSTfeatures["images"])
 		{
-			$imagelist = explode("\\\\ ", $POSTfeatures["images"]);
+			$imagelist = explode(" ", $POSTfeatures["images"]);
 			foreach (array_keys($imagelist) as $imlk)
 			{
 				if (substr($imagelist[$imlk], strpos($imagelist[$imlk], '.'), 4) == ".bmp")
