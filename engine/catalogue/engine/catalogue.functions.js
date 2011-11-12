@@ -32,18 +32,21 @@ function readCookie(name)
 	}
 	return null;
 }
-function createTrashCookieString(idsArray, amountArray)
+/*
+ *	Cart cookie format: "id1:amount1,id2:amount2,..."
+ */
+function createCartCookieString(idsArray, amountArray)
 {
-	var trashCookieString = "";
+	var cartCookieString = "";
 	for(i = 0, n = idsArray.length; i < n; i++)
 	{
-		trashCookieString += idsArray[i] + ":" + amountArray[i] + ",";
+		cartCookieString += idsArray[i] + ":" + amountArray[i] + ",";
 	}
-	return trashCookieString.substr(0, trashCookieString.length - 1);
+	return cartCookieString.substr(0, cartCookieString.length - 1);
 }
-function addItemToTheTrash(itemId)
+function addItemToTheCart(itemId)
 {
-	var cookieString = readCookie("trash");
+	var cookieString = readCookie("cart");
 	var itemIdsArray = new Array();
 	var itemsAmountArray = new Array();
 	
@@ -62,7 +65,7 @@ function addItemToTheTrash(itemId)
 			{
 				itemsAmountArray[i] = parseInt(itemsAmountArray[i]) + 1;
 				cookieString = "";
-				writeCookie("trash", createTrashCookieString(itemIdsArray, itemsAmountArray), 1000*60*60*24);
+				writeCookie("cart", createCartCookieString(itemIdsArray, itemsAmountArray), 1000*60*60*24);
 				alert("Товар додано.");
 				return;
 			}
@@ -70,13 +73,13 @@ function addItemToTheTrash(itemId)
 	}
 	itemIdsArray.push(itemId);
 	itemsAmountArray.push(1);
-	writeCookie("trash", createTrashCookieString(itemIdsArray, itemsAmountArray), 1000*60*60*24);
+	writeCookie("cart", createCartCookieString(itemIdsArray, itemsAmountArray), 1000*60*60*24);
 	alert("Товар додано.");
 }
 
-function removeItemFromTheTrash(itemId)
+function removeItemFromTheCart(itemId)
 {
-	var cookieString = readCookie("trash");
+	var cookieString = readCookie("cart");
 	if(cookieString != null)
 	{
 		var itemIdsArray = new Array();
@@ -107,10 +110,10 @@ function removeItemFromTheTrash(itemId)
 		}
 		else
 		{
-			cookieString = createTrashCookieString(itemIdsArray, itemsAmountArray);
+			cookieString = createCartCookieString(itemIdsArray, itemsAmountArray);
 			lifetime = 1000*60*60*24;
 		}
-		writeCookie("trash", cookieString, lifetime);
+		writeCookie("cart", cookieString, lifetime);
 		window.location.reload(true);
 		window.location.replace(window.location.href);
 		window.location.href = window.location.href;

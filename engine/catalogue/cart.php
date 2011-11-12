@@ -7,21 +7,24 @@
 	$pathToThumbnails = $pathToThisScript . "thumbnails/";
 	$urlBeginning = "?page=goods&";
 	
-	$trash = $_COOKIE["trash"];
-	$trash = explode(",", $trash);
-	for($i = 0, $n = count($trash); $i < $n; $i++)
+	/*
+	 *	Cart cookie format: "id1:amount1,id2:amount2,..."
+	 */
+	$cart = $_COOKIE["cart"];
+	$cart = explode(",", $cart);
+	for($i = 0, $n = count($cart); $i < $n; $i++)
 	{
-		$item = explode(":", $trash[$i]);
-		$trash[$item[0]] = $item[1];
-		unset($trash[$i]);
+		$item = explode(":", $cart[$i]);
+		$cart[$item[0]] = $item[1];
+		unset($cart[$i]);
 	}
 	
 	//Відкрити з'єдняння для подальших дій
 	if(!$mysqlConnectionLinkID)
 		$mysqlConnectionLinkID = openMySQLConnection($mysqlHostname, $mysqlUsername, $mysqlPassword);
 	
-	function itemThumbnailInListTrashView($pathToThumbnail, $itemId, $itemTitle, $itemPrice, $urlBeginning = "?")
-	{//trash
+	function itemThumbnailInListCartView($pathToThumbnail, $itemId, $itemTitle, $itemPrice, $urlBeginning = "?")
+	{//cart
 		$result =
 			"
 			<td>
@@ -33,8 +36,10 @@
 				<div class=\"catalogueItemTitle\"><a href=\"{$urlBeginning}show=$itemId\">$itemTitle</a></div>
 			</td>
 			<td>
-				{$itemPrice} грн.
-				<a href=\"javascript:removeItemFromTheTrash('$itemId');\">Видалити з кошика</a>
+				<p>{$itemPrice} грн.</p>
+				<p>
+					<a href=\"javascript:removeItemFromTheCart('$itemId');\">Видалити з кошика</a>
+				</p>
 			</td>";
 		return $result;
 	}
@@ -43,21 +48,23 @@
 	{
 		return !empty($item);
 	}
-	$trash = array_filter($trash, "isEmpty");
+	$cart = array_filter($cart, "isEmpty");
 
 	$items = "<table class=\"onlyItems\">";
 	$summ = 0;
-	foreach($trash as $id => $amount)
+	foreach($cart as $id => $amount)
 	{
 		/*
 		 *	завантаження з бази рядка з інформацією яку потрібно показати
 		 */
 		$itemData = getDataFromDB($mysqlConnectionLinkID, $mysqlDBName, $mysqlDBTableToStoreCatalogueItems, "id", $id);
 		$itemData = $itemData[0];
+		if(!$itemData["thumbnail"])
+			$itemData["thumbnail"] = "default.png";
 		//$itemsData[] = $itemData;
 		$itemFeatures = getDataFromDB($mysqlConnectionLinkID, $mysqlDBName, $mysqlDBTableToStoreCatalogueFeatures, "id", $id);
 		$itemFeatures = $itemFeatures[0];
-		$items .= "<tr>" . itemThumbnailInListTrashView( $pathToThumbnails . $itemData["thumbnail"],
+		$items .= "<tr>" . itemThumbnailInListCartView( $pathToThumbnails . $itemData["thumbnail"],
 				$itemData["id"], $itemData["name"],
 				$itemFeatures["price"], $urlBeginning) . "</tr>";
 		$summ += $itemFeatures["price"];
@@ -76,12 +83,12 @@
 				}
 			);
 		</script>
-		<div id=\"trashViewContainer\">
+		<div id=\"cartViewContainer\">
 			";
-	if(!empty($trash))
+	if(!empty($cart))
 	{
 		echo "$items
-			<div \"priceSumm\">	Загальна сума: $summ грн. </div>";
+			<div id=\"priceSumm\">	Загальна сума: $summ грн. </div>";
 	}
 	else
 	{

@@ -252,12 +252,28 @@ img
 			border-top: 1px dotted #AAA;
 			text-align: justify;
 		}
-		
+	
+	#priceSumm
+	{
+		margin-right: 35px;
+		font-family: Helvetica, Arial, Monaco, sans-serif;
+		font-size: large;
+		text-align: right;
+	}
 
 .onlyItems
 {
-	width: 636px;
 	border-collapse: collapse;
+}
+
+#groupViewContainer .onlyItems
+{
+	width: 636px;
+}
+
+#cartViewContainer .onlyItems
+{
+	width: 100%;
 }
 
 .onlyItems tr:last-child td
@@ -296,7 +312,7 @@ img
 	width: 200px;
 	height: 165px;
 	padding: 5px 0px;
-	font-family: Helvetica Arial Monaco sans-serif;
+	font-family: Helvetica, Arial, Monaco, sans-serif;
 	text-align: center;
 	padding-top: 15px;
 }

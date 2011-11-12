@@ -35,7 +35,7 @@ function itemThumbnailInListView($pathToThumbnail, $itemId, $itemTitle, $itemPri
 			</td>
 			<td>
 				$priceString
-				<a href=\"javascript:addItemToTheTrash('$itemId');\">Додати в кошик</a>
+				<a href=\"javascript:addItemToTheCart('$itemId');\">Додати в кошик</a>
 			</td>";
 	return $result;
 }
@@ -47,7 +47,7 @@ function itemView($itemId, $itemTitle, $itemImages, $itemFeatures, $itemDescript
 			<div id=\"itemInfoContainer\">
 				<div id=\"itemTitle\">$itemTitle</div>
 				<div id=\"itemFeatures\">$itemFeatures</div>
-				<a href=\"javascript:addItemToTheTrash('$itemId');\">Додати в кошик</a>
+				<a href=\"javascript:addItemToTheCart('$itemId');\">Додати в кошик</a>
 				<div id=\"itemDescription\">
 						$itemDescription
 				</div>
@@ -60,7 +60,8 @@ function itemFeatureTemplate($featureTitle, $featureText)
 }
 function itemViewImage($itemTitle, $pathToImage, $pathToBigImage, $imageNumber)
 {//catalogue
-	return "<a rel=\"lightbox-$itemTitle\" href=\"$pathToBigImage\"><img src=\"$pathToImage\" alt=\"{$itemTitle}_image$imageNumber\"/></a>";
+	return (($pathToBigImage)?"<a rel=\"lightbox-$itemTitle\" href=\"$pathToBigImage\">":"<a href=\"#itemViewContainer\">") .
+			"<img src=\"$pathToImage\" alt=\"{$itemTitle}_image$imageNumber\"/></a>";
 }
 function groupView($items, $itemDescription)
 {//catalogue

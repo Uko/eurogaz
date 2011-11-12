@@ -233,7 +233,7 @@
 			}	
 		}
 		
-		
+		//check whether there is some images for this item in the db
 		if($features["images"])
 		{
 			$images = explode("\\\\ ", $features["images"]);
@@ -241,6 +241,11 @@
 			$i = 0;
 			foreach($images as $im)
 				$imList .= itemViewImage($itemData["name"], $pathToImages.$im, $pathToRealSizeImages.$im, ++$i);
+		}
+		//provide default thumbnail
+		else
+		{
+			$imList = itemViewImage($itemData["name"], $pathToThumbnails."default.png", "", $i);
 		}
 		
 		$viewContainer = itemView($itemData["id"], $itemData["name"], $imList, $featuresView, $itemData["description"]);
