@@ -40,21 +40,17 @@ function pluploadView($pathToUploader, $maxFileSize = "2")
 		<script type=\"text/javascript\" src=\"{$pathToUploader}plupload/js/jquery.ui.plupload/jquery.ui.plupload.js\"></script>
 		<script type=\"text/javascript\" src=\"{$pathToUploader}plupload/js/i18n/uk.js\"></script>
 		<script type=\"text/javascript\">
-//			var uploader = new plupload.Uploader(
 			$(\"#filelist\").plupload(
 			{
-				runtimes : 'gears,html5,flash,silverlight,browserplus',
-//				browse_button : 'pickfiles',
-//				multi_selection: false,
-//				container: 'container',
-				max_file_size : '{$maxFileSize}b',
+				runtimes : 'html5,flash,silverlight,browserplus',//gears
+//				max_file_size : '{$maxFileSize}b',
+				chunk_size : '{$maxFileSize}b',
 				url : '{$pathToUploader}uploader.engine.php',
 //				resize : {width : 320, height : 240, quality : 90},
 				flash_swf_url : './js/plupload.flash.swf',
 				silverlight_xap_url : './js/plupload.silverlight.xap',
 				filters : [
 					{title : \"Image files\", extensions : \"jpg,jpeg,gif,png\"}
-//					,{title : \"Zip files\", extensions : \"zip\"}
 				],
 				buttons:{browse:true,start:false,stop:false},
 				multipart: true,
@@ -107,7 +103,6 @@ function pluploadView($pathToUploader, $maxFileSize = "2")
 				return false;
 			});
 		</script>
-		<script type=\"text/javascript\" src=\"{$pathToUploader}plupload/js/plupload.init.js\"></script>
 		<div id=\"filelist\"></div>";
 }
 ?>

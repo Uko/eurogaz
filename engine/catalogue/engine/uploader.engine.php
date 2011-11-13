@@ -75,9 +75,11 @@ function thisRealScriptName($SCRIPT_NAME = "", $SCRIPT_FILENAME = "", $FILE = __
 			if(!$uploaderIsShown)
 				die("Error: Relogin please.");
 
+			//here uploading mechanism including
 //			@include_once("noswfupload/upload.php");
 			@include_once("plupload/upload.php");
 			
+			//below after-upload checking
 			$filePath = $targetDir . DIRECTORY_SEPARATOR . $fileName;
 			foreach (array(".php", ".phtml", ".php3", ".php4") as $ext)
 			{
@@ -96,6 +98,37 @@ function thisRealScriptName($SCRIPT_NAME = "", $SCRIPT_FILENAME = "", $FILE = __
 				@unlink($filePath);
 				die ("Error: We only accept GIF, JPEG, BMP and PNG images");
 			}
+			
+			//if we got here - file passed all checks successfully
+			//let's make thumbnail and small image
+			require_once("ThumbLib/ThumbLib.inc.php");
+			if (substr($fileName, strpos($fileName, '.'), 4) == ".bmp")
+			{
+				include_once "bmp.php";
+				$im = imagecreatefrombmp($filePath);
+				@unlink($filePath);
+				$fileName = str_replace(".bmp", ".png", $fileName);
+				imagepng($im, $filePath);
+			}
+			//small image turn
+			list($width, $height) = getimagesize($filePath);
+			if(($width > 200) || ($height > 300))
+			{
+				$thumb = PhpThumbFactory::create($filePath);
+				$thumb->resize(200, 300);
+				$thumb->save("../images/" . $fileName);
+			}
+			else
+			{
+				copy($filePath, "../images/" . $fileName);
+			}
+			
+			//and now thumb turn
+			$thumb = PhpThumbFactory::create($filePath);
+			$thumb->setOptions(array("resizeUp"=> "true"));
+			$thumb->adaptiveResize(120, 180);
+			$thumb->save("../thumbnails/" . $fileName);
+			
 			// Return JSON-RPC response
 			echo('{"jsonrpc" : "2.0", "result" : {"filename": "' . $fileName . '"}, "id" : "id"}');
 			break;

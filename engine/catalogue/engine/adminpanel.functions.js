@@ -1,8 +1,14 @@
+$(document).ready(function()
+{
+	kr2en.kr2en = {};
+	for(var i = 0, l = kr2en.kr_str.length; i < l; i++)
+		kr2en.kr2en[kr2en.kr_str.charAt(i)] = kr2en.en_str[i];
+})
+
 function changeImageInputType(sahc, pathToUploader)
 {
 	$("#uploaderWork").slideUp("slow");
 	$("#uploaderWork").html("");
-	var todo;
 	switch($("#imageInputType").val())
 	{
 		case "byHand":
@@ -18,29 +24,24 @@ function changeImageInputType(sahc, pathToUploader)
 			$("input#images").parent().slideUp("slow");
 			$("#addItemForm_thumbnail").slideUp("slow");
 			$("#addItemForm_thumbnail_label").slideUp("slow");
-			todo = "showUploader";
-			after = "addUploadedFileName";
-			break;
-	}
-	if(todo)
-	{
-		$.ajax(
-		{
-			type: "POST",
-			url: pathToUploader+"uploader.engine.php",
-			data: "todo="+todo+"&sahc="+sahc+"&after="+after,
-			beforeSend: function(){
-				$("#loading").show("fast");
-			}, //show loading just when link is clicked
-			complete: function(){
-				$("#loading").hide("fast");
-			}, //stop showing loading when the process is complete
-			success: function(html) //so, if data is retrieved, store it in html
+			$.ajax(
 			{
-				$("#uploaderWork").html(html); //show the html inside #uploaderWork div
-				$("#uploaderWork").show("slow"); //animation
-			}
-		});
+				type: "POST",
+				url: pathToUploader+"uploader.engine.php",
+				data: "todo=showUploader&sahc="+sahc,
+				beforeSend: function(){
+					$("#loading").show("fast");
+				}, //show loading just when link is clicked
+				complete: function(){
+					$("#loading").hide("fast");
+				}, //stop showing loading when the process is complete
+				success: function(html) //so, if data is retrieved, store it in html
+				{
+					$("#uploaderWork").html(html); //show the html inside #uploaderWork div
+					$("#uploaderWork").show("slow"); //animation
+				}
+			});
+			break;
 	}
 }
 //function addUploadedFileName(data)
@@ -88,12 +89,6 @@ var kr2en = {
 		return a.join("");
 	}
 }
-$(document).ready(function()
-{
-	kr2en.kr2en = {};
-	for(var i = 0, l = kr2en.kr_str.length; i < l; i++)
-		kr2en.kr2en[kr2en.kr_str.charAt(i)] = kr2en.en_str[i];
-})
 function catalogueStartUpTinyMCE()
 {
 	tinyMCE.init

@@ -20,5 +20,6 @@ plupload.addI18n({
     'HTTP Error.': 'Помилка HTTP.',
     'Security error.': 'Помилка безпеки.',
     'Generic error.': 'Загальна помилка.',
-    'IO error.': 'Помилка вводу-виводу.'
+    'IO error.': 'Помилка вводу-виводу.',
+	'%d files queued': '%d в черзі'
 });

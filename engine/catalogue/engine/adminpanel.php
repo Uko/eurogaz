@@ -14,7 +14,6 @@ if ($loggedIn)
 	fclose($secureAjaxFile);
 
 	include_once "catalogue.functions.php";
-	require_once "ThumbLib/ThumbLib.inc.php";
 	include_once "catalogue.variables.php";
 
 	$whereToRedirect = $_SERVER["PHP_SELF"] . $urlBeginning . "show=" . $_GET["show"];
@@ -185,7 +184,7 @@ if ($loggedIn)
 
 						if ($features["images"])
 						{
-							$imagelist = explode("\\\\ ", $features["images"]);
+							$imagelist = explode(" ", $features["images"]);
 							foreach ($imagelist as $iml)
 							{
 								unlink($pathToCatalogue . "realSizeImages/" . $iml);
@@ -229,41 +228,10 @@ if ($loggedIn)
 						($featuresHead[$i] == "collection_type"))						//якщо дана характеристика - collection_type
 				$POSTfeatures[$featuresHead[$i]] = $_POST[$featuresHead[$i]];
 		//якщо поле іконки не ввели і поле картинок заповнене
-		// - генерація іконки з першого введеного зображення
+		// - ввести в поле іконки назву першої введеної картинки
 		if (!$_POST["thumbnail"] && $POSTfeatures["images"])
 		{
 			$imagelist = explode(" ", $POSTfeatures["images"]);
-			foreach (array_keys($imagelist) as $imlk)
-			{
-				if (substr($imagelist[$imlk], strpos($imagelist[$imlk], '.'), 4) == ".bmp")
-				{
-					include_once "bmp.php";
-					$im = imagecreatefrombmp($pathToCatalogue . "realSizeImages/" . $imagelist[$imlk]);
-					unlink($pathToCatalogue . "realSizeImages/" . $imagelist[$imlk]);
-					$tmp = str_replace(".bmp", ".png", $imagelist[$imlk]);
-					$POSTfeatures["images"] = str_replace($imagelist[$imlk], $tmp, $POSTfeatures["images"]);
-					$imagelist[$imlk] = $tmp;
-					imagepng($im, $pathToCatalogue . "realSizeImages/" . $imagelist[$imlk]);
-				}
-				list($width, $height) = getimagesize($pathToCatalogue . "realSizeImages/" . $imagelist[0]);
-				if(($width > 200) || ($height > 300))
-				{
-					$thumb = PhpThumbFactory::create($pathToCatalogue . "realSizeImages/" . $imagelist[$imlk]);				
-					$thumb->resize(200, 300);
-					$thumb->save($pathToCatalogue . "images/" . basename($imagelist[$imlk]));
-				}
-				else
-				{
-					copy($pathToCatalogue . "realSizeImages/" . $imagelist[0], $pathToCatalogue . "images/" . $imagelist[0]);
-				}
-			}
-			$thumb = PhpThumbFactory::create($pathToCatalogue . "realSizeImages/" . $imagelist[0]);
-			//list($width, $height) = getimagesize($pathToCatalogue . "realSizeImages/" . $imagelist[0]);
-			//$thumb->cropFromCenter(min($width, $height), min($width, $height));
-			$thumb->setOptions(array("resizeUp"=> "true"));
-			$thumb->adaptiveResize(120, 180);
-			$_POST["thumbnail"] = $pathToCatalogue . "thumbnails/" . basename($imagelist[0]);
-			$thumb->save($_POST["thumbnail"]);
 			$_POST["thumbnail"] = basename($imagelist[0]);
 		}
 		if ($POSTfeatures["attributes"])

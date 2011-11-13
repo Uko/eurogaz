@@ -2,7 +2,7 @@
 	$LOCAL = array(
 		"first_breadcrumb" => "Товари",
 		"country" => "Країна",
-		"price" => "Ціна",
+		"price" => "Ціна (грн)",
 		"images" => "Картинка(и)"
 	);
 ?>
