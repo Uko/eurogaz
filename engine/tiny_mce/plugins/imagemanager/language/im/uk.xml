@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language-pack>
+	<header>
+		<author>Moxiecode Systems AB (spam@moxiecode.com)</author>
+		<version minor="1" major="0" releasedate="2011-12-03" />
+		<description>
+			This is the Ukrainian language pack for the MCImageManager.
+		</description>
+	</header>
+
+	<language code="uk" title="Ukrainian" dir="ltr">
+		<group target="common">
+			<item name="title">Керівник Картинок Moxiecode</item>
+			<item name="filemanager">Керівник файлів</item>
+			<item name="createdir">Створити папку</item>
+			<item name="refresh">Оновити</item>
+			<item name="upload">Завантажити</item>
+			<item name="help">Допомога</item>
+			<item name="edit">Редагувати</item>
+			<item name="deleteit">Видалити</item>
+			<item name="view">Перегляд</item>
+			<item name="insert">Вставити</item>
+			<item name="directory">Вибрати папку</item>
+			<item name="loading">Завантаження...</item>
+			<item name="filter">Цідилко</item>
+			<item name="alert_ok">Добре</item>
+			<item name="confirm_yes">Так</item>
+			<item name="confirm_no">Ні</item>
+			<item name="prev">Попер</item>
+			<item name="next">Наст</item>
+			<item name="image_data">Отримання даних картинки, будь-ласка, зачекайте...</item>
+			<item name="page">Сторінка</item>
+			<item name="of">з</item>
+
+			<!-- Legacy items -->
+			<item name="add_favorite">Додати улюбленця</item>
+			<item name="removefavorite">Видалити улюбленця</item>
+		</group>
+
+		<group target="button">
+			<!-- think about the length of the text -->
+			<item name="create">Створити</item>
+			<item name="cancel">Відміна</item>
+			<item name="apply">Застосувати</item>
+			<item name="save">Зберегти</item>
+		</group>
+
+		<group target="error">
+			<!-- common -->
+			<item name="demo">Ця дія обмежена в показовому режимі.</item>
+			<item name="no_filesystem">Не знайдено файлової системи для шляху: {path}.</item>
+			<item name="no_access">Нема доступу на цьому файлу/папки.</item>
+			<item name="no_write_access">Папка не має прав запису.</item>
+			<item name="file_not_exists">Файл/папку не знайдено.</item>
+			<item name="invalid_filename">Файлове ім’я не дійсне.</item>
+
+			<!-- create dir -->
+			<item name="template_missing">Вибраний шаблон відсутній.</item>
+			<item name="folder_exists">Папка з вказаним іменем вже існує.</item>
+			<item name="createdir_failed">Помилка неможливо створити папку.</item>
+
+			<!-- upload -->
+			<item name="upload_failed">Завантаження не вдалось, перевірте права запису вашої папки.</item>
+			<item name="file_exists">Файл з вказаним іменем вже існує.</item>
+			<item name="error_to_large">Файл, що Ви намагаєтесь завантажити, надто великий.</item>
+
+			<!-- delete -->
+			<item name="delete_failed">Неможливо видалити файл(и).</item>
+			
+			<!-- image edit -->
+			<item name="crop_failed">Неможливо вжати картинку.</item>
+			<item name="resize_failed">Неможливо змінити розміри картинки.</item>
+			<item name="rotate_failed">Обертання було не успішне.</item>
+			<item name="flip_failed">Ляс був не успішний.</item>
+			<item name="save_failed">Збереження було не успішне.</item>
+
+			<!-- Legacy items -->
+			<item name="remove_favorite_failed">Не вдалось видалити улюбленця з Вашого списку улюбленців.</item>
+		</group>
+
+		<group target="message">
+			<!-- common -->
+			<item name="save_success">Файл був збережений.</item>
+			<item name="keepalive">Запит залишитисьживим.</item>
+
+			<!-- delete -->
+			<item name="delete_success">Файл(и) видалені успішно.</item>
+
+			<!-- create dir -->
+			<item name="directory_ok">Папку створено.</item>
+
+			<!-- upload -->
+			<item name="upload_ok">Завантаження успішне.</item>
+
+			<!-- image edit -->
+			<item name="crop_success">Жаття успішне.</item>
+			<item name="resize_success">Зміна розмірів успішна.</item>
+			<item name="rotate_success">Обертання успішне.</item>
+			<item name="flip_success">Ляс успішний.</item>
+		</group>
+
+		<group target="panel">
+			<item name="categories">Категорії</item>
+			<item name="folders">Папки</item>
+
+			<!-- Legacy items -->
+			<item name="favorites">Улюбленці</item>
+			<item name="history">Історія</item>
+		</group>
+
+		<group target="view">
+			<item name="title">Вигляд</item>
+			<item name="mode">Режим перегляду:</item>
+			<item name="thumbnail">Мініатюри</item>
+			<item name="textlist">Текстовий список</item>
+			<item name="images_per_page">картинок/сторінку</item>
+			<item name="confirm_delete">Ви впевнені, що хочете видалити цей файл?</item>
+			<item name="keyboard_next">Клавіші: ПРОБІЛ,N,СТРІЛКАВПРАВО,PAGE DOWN</item>
+			<item name="keyboard_prev">Клавіші: P,СТРІЛКАВЛІВО,PAGE UP</item>
+			<item name="dimensions">Виміри</item>
+
+			<!-- Legacy items -->
+			<item name="confirm_remove_favorite">Ви впевнені, що хочете видалити це з Вашого списку улюбленців?</item>
+		</group>
+
+		<group target="createdir">
+			<item name="title">Створити папку</item>
+			<item name="description">Вставити ім’я для папки, яку Ви хочете створити.</item>
+			<item name="template">Шаблон:</item>
+			<item name="select_template">-- Вибрати шаблон --</item>
+			<item name="directory_name">Ім’я папки:</item>
+			<item name="create_in">Створити в:</item>
+			<item name="progress">Створення папки, будь-ласка, зачекайте...</item>
+		</group>
+
+		<group target="upload">
+			<item name="title">Завантажити</item>
+			<item name="description">Використати форму для завантаження файлів.</item>
+			<item name="valid_extensions">Чинні розширення:</item>
+			<item name="max_upload_size">Найбільший розмір завантаження:</item>
+			<item name="file_to_upload">Файл для завантаження:</item>
+			<item name="as_file_name">Як ім’я файлу:</item>
+			<item name="path">Шлях: </item>
+			<item name="button_upload">Завантажити</item>
+			<item name="browse">Додати файл(и)</item>
+			<item name="progress">Завантаження...</item>
+			<item name="upload_warn">Файли завантажені, Ви впенвні, що хочете відмінити завантаження?</item>
+			<item name="statusrow">Ви маєте {files} файлів (total {size}), що гаряче чекають бути завантаженими.</item>
+			<item name="progressinfo">{loaded} з {total} завантажено при {speed}/с.</item>
+			<item name="abort">Обірвати завантаження</item>
+			<item name="add_more">Додати ще?</item>
+			<item name="upload_to_server">Завантажити на сервер</item>
+			<item name="cancelled">Завантаження було відмінено</item>
+			<item name="choose_files">Вибрати файли</item>
+			<item name="basic_upload">Якщо Ви маєте проблеми завантажуючи Ви завжди можете використати {a}основний завантажувач{/a}.</item>
+			<item name="remove">Видалити</item>
+			<item name="file">Файл</item>
+			<item name="size">Розмір</item>
+			<item name="status">Стан</item>
+			<item name="no_valid_files">Не вибрано чинних файлів, буль-ласка, спробуйте знову.</item>
+		</group>
+
+		<group target="edit_image">
+			<item name="title">Moxiecode ImageManager Редактор</item>
+			<item name="save">Зберегти</item>
+			<item name="revert">Повернути</item>
+			<item name="crop">Вжати</item>
+			<item name="resize">Зміни розмір</item>
+			<item name="please_wait">Оброблення картинки, будь-ласка, почекайте...</item>
+			<item name="constrain">Утримувати пропорції</item>
+			<item name="left">Зліва</item>
+			<item name="top">Зверху</item>
+			<item name="width">Ширина</item>
+			<item name="height">Висота</item>
+			<item name="save_as">Зберегти як</item>
+			<item name="flip">Ляснути</item>
+			<item name="rotate">Обернути</item>
+			<item name="reload">Перезавантажити</item>
+			<item name="horizontal">Горизонтальне</item>
+			<item name="vertical">Вертикальне</item>
+			<item name="saving_wait">Збереження картинки, будь-ласка, почекайте...</item>
+			<item name="confirm_revert">Ви впевнені, що хочете повернути до останньо збережної картинки?</item>
+			<item name="loading">Завантаження картинки, будь-ласка, почекайте...</item>
+			<item name="confirm_no_save">Ви впенені, що не хочете зберегти зміни, які Ви внесли в дану картинцу?</item>
+		</group>
+
+		<group target="tinymce">
+			<item name="insertimage_desc">Вставити картинку</item>	
+			<item name="replaceimage_desc">Замінити картинку</item>	
+			<item name="editimage_desc">Редагувати картинку</item>	
+		</group>
+
+		<group target="favorites">
+			<item name="special_folder_title">Улюбленці</item>
+			<item name="addfavorites">Додати улюбленця(ів)</item>
+			<item name="removefavorites">Видалити улюбленця(ів)</item>
+			<item name="confirm_remove_favorite">Ви впевнені, що хочете видалити це з Вашого списку улюбленців?</item>
+			<item name="remove_favorite_failed">Не вдалось видалити улюбленця з Вашого списку улюбленців.</item>
+		</group>
+
+		<group target="history">
+			<item name="special_folder_title">Історія</item>
+		</group>
+	</language>
+</language-pack>

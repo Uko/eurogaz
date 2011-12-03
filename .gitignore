@@ -1,4 +1,5 @@
-catalogue/realSizeImages/*
-catalogue/thumbnails/*
-catalogue/images/*
-nbproject/*
+*/catalogue/realSizeImages/
+*/catalogue/thumbnails/
+*/catalogue/images/
+nbproject/
+\.\.php

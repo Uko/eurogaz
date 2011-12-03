@@ -170,4 +170,5 @@ upper_roman:"Upper roman",
 circle:"\u041A\u043E\u043B\u043E",
 disc:"\u0414\u0438\u0441\u043A",
 square:"\u041A\u0432\u0430\u0434\u0440\u0430\u0442"
-}}});
+}
+}});
