@@ -17,6 +17,7 @@ img
 {
 	width: 899px;
 	margin: 0 auto;
+	background: #FF9;
 }
 #head
 {
@@ -498,9 +499,9 @@ img
 	clear: both;
 	text-align: center;
 	margin: auto;
-	margin-top: 30px;
+	padding-top: 30px;
 	width: 910px;
-	margin-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 
