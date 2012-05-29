@@ -3,3 +3,5 @@
 */catalogue/images/
 nbproject/
 \.\.php
+engine/backups
+*.diff

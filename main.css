@@ -101,7 +101,7 @@ img
 #sausage>form
 {
 	display: inline-block;
-	width: 259px;
+	/*width: 259px;*/
 	line-height: 30px;
 	margin: 0px;
 	padding: 0px;
@@ -110,6 +110,7 @@ img
 #sausage>form input:first-child
 {
 	width: 183px;
+	border: 0px;
 }
 #sausage>form input:last-child
 {
