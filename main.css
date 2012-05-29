@@ -89,14 +89,14 @@ img
 	/*font-family: myriad,Sans-Serif,Verdana,Tahoma,Arial;*/
 	font-weight: bold;
 	text-decoration: none;
-	font-size: 17px;
+	font-size: 95%;
 	color: black;
 	width: 90px;
 }
 
 #sausage>a:hover 
 {
-	font-size: 13px;
+	font-size: 85%;
 }
 
 #sausage>form
@@ -110,7 +110,7 @@ img
 
 #sausage>form input:first-child
 {
-	width: 183px;
+	width: 180px;
 	border: 0px;
 }
 #sausage>form input:last-child
@@ -124,14 +124,14 @@ img
 	/*font-family: myriad,Sans-Serif,Verdana,Tahoma,Arial;*/
 	font-weight: bold;
 	text-decoration: none;
-	font-size: 16px;
+	font-size: 95%;
 	color: black;
 	cursor: pointer;
 }
 
 #sausage>form input:last-child:hover
 {
-	font-size: 13px;
+	font-size: 85%;
 }
 
 #MainMenu
@@ -148,13 +148,13 @@ img
 		/*font-family: myriad,Sans-Serif,Verdana,Tahoma,Arial;*/
 		font-weight: bold;
 		text-decoration: none;
-		font-size: 16px;
+		font-size: 95%;
 		color: black;
 		width: 15.5%;
 	}
 	.MenuItem:hover 
 	{
-		font-size: 13px;
+		font-size: 85%;
 	}
 	
 	.MenuItemSelected
