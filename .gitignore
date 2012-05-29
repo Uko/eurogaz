@@ -5,3 +5,4 @@ nbproject/
 \.\.php
 engine/backups
 *.diff
+engine/catalogue/engine/sup\.php
